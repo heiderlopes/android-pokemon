@@ -31,7 +31,12 @@ public class DaoPokemon {
         bulbasaur.addFraqueza("Psychic");
         bulbasaur.addTipo("Grass");
         bulbasaur.addTipo("Poison");
-        bulbasaur.setId(R.drawable.p001_bulbasaur);
+        bulbasaur.setIcon(R.drawable.p001_bulbasaur);
+        pokemons.add(bulbasaur);
+        pokemons.add(bulbasaur);
+        pokemons.add(bulbasaur);
+        pokemons.add(bulbasaur);
+        pokemons.add(bulbasaur);
         pokemons.add(bulbasaur);
 
         return pokemons;
