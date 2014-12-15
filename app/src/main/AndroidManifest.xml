@@ -8,8 +8,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="br.com.lopes.heider.android_custom_listview_pokemon.SplashScreen"
-            android:label="@string/app_name" >
+            android:name="br.com.lopes.heider.android_custom_listview_pokemon.SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -17,8 +16,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="br.com.lopes.heider.android_custom_listview_pokemon.MainActivity"
-            android:label="@string/title_activity_main" >
+            android:name="br.com.lopes.heider.android_custom_listview_pokemon.MainActivity" >
         </activity>
     </application>
 

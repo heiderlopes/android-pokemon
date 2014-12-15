@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageView;
 import android.widget.ListView;
 import br.com.lopes.heider.android_custom_listview_pokemon.adapter.PokemonListViewAdapter;
 import br.com.lopes.heider.android_custom_listview_pokemon.dao.DaoPokemon;
@@ -11,13 +12,17 @@ import br.com.lopes.heider.android_custom_listview_pokemon.dao.DaoPokemon;
 public class MainActivity extends Activity {
 
     private ListView lvPokemons;
+    private ImageView  ivLeitor;
+    private DaoPokemon dp;
+    private Activity context;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        context = this;
+        dp = new DaoPokemon(this);
         lvPokemons = (ListView)findViewById(R.id.lvPokemons);
-        DaoPokemon dp = new DaoPokemon(this);
-        lvPokemons.setAdapter(new PokemonListViewAdapter(this, dp.getAllPokemon()));
+        lvPokemons.setAdapter(new PokemonListViewAdapter(context, dp.getAllPokemon()));
     }
 
 
